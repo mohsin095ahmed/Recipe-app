@@ -8,6 +8,7 @@ function Cate({meal}) {
     <>
     <div className='parent'>
        {
+        meal === null ? <div className='not'>RECIPE NOT FOUND</div> :
         meal && meal.map((r, index)=>(
          <div key={index} className='border content-1 '>
             <div className='img'>

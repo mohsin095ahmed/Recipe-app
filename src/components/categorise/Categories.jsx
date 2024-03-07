@@ -2,11 +2,12 @@ import React from 'react'
 import "./Categories.css"
 import {  NavLink } from 'react-router-dom'
 function Categories({recipe}) {
-    
+  
   return (
     <>
     <div className='parent'>
        {
+        
         recipe && recipe.map((r, index)=>(
          <div key={index} className='border content '  >
             <div className='img'>
